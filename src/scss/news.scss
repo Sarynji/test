@@ -1,0 +1,170 @@
+.news {
+  padding: 54px 0 120px;
+
+  &-block {
+    &-new {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 77px;
+      &__title {
+        font-family: Oswald, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 44px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #343434;
+        width: 260px;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        &:before {
+          content: "";
+          position: absolute;
+          max-width: 100px;
+          width: 100%;
+          border: 2px solid #005BC1;
+          transform: translateY(-7px);
+          left: 0;
+        }
+
+        &:after {
+          content: "";
+          position: absolute;
+          max-width: 50px;
+          width: 100%;
+          border: 2px solid #005BC1;
+          transform: translateY(6px);
+          left: 50px;
+        }
+      }
+      &__btn {
+        width: 190px;
+        height: 50px;
+        font-family: Open Sans, sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background: #005BC1;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        &:hover{
+          color: #005BC1;
+          background: #ffffff;
+          border: 1px solid #005BC1;
+          transition: 0.60s;
+          -webkit-box-shadow: 0 0 9px 5px #005BC1;
+          box-shadow: 0 0 9px 5px #005BC1;
+        }
+      }
+    }
+    &-window{
+      display: flex;
+      &-box{
+        width: 255px;
+        margin-right: 30px;
+        &:nth-child(2){
+          margin-right: 0;
+        }
+        img{
+          width: 100%;
+        }
+        &-text{
+          &-dt{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 46px;
+            &__subtitle{
+              font-family: Oswald, sans-serif;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 18px;
+              line-height: 27px;
+              letter-spacing: 0.05em;
+              text-transform: uppercase;
+              color: #343434;
+            }
+            &__date{
+              font-family: Open Sans, sans-serif;
+              font-style: normal;
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 19px;
+              text-align: right;
+              color: #979797;
+            }
+          }
+          &__txt{
+            font-family: Open Sans, sans-serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 19px;
+            color: #343434;
+            margin-bottom: 21px;
+          }
+          &__link{
+            font-family: Open Sans, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 19px;
+            color: #343434;
+          }
+        }
+        &-cont{
+          width: 225px;
+          margin-left: 60px;
+          &__title{
+            font-family: Oswald, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 27px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #343434;
+            margin-bottom: 20px;
+          }
+          &__txt{
+            font-family: Open Sans, sans-serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 19px;
+            color: #343434;
+            margin-bottom: 20px;
+          }
+          &-dt{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            img{
+              max-width: 130px;
+              width: 100%;
+              object-fit: cover;
+            }
+            &__date{
+              font-family: Open Sans, sans-serif;
+              font-style: normal;
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 19px;
+              color: #979797;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}

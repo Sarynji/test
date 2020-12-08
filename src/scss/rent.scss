@@ -1,0 +1,137 @@
+.rent{
+  padding: 75px 0 54px;
+  &__title{
+    font-family: Oswald, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 44px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #343434;
+    width: 455px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 70px;
+    &:before{
+      content: "";
+      position: absolute;
+      max-width: 100px;
+      width: 100%;
+      border: 2px solid #005BC1;
+      transform: translateY(-7px);
+      left: 0;
+    }
+    &:after{
+      content: "";
+      position: absolute;
+      max-width: 50px;
+      width: 100%;
+      border: 2px solid #005BC1;
+      transform: translateY(6px);
+      left: 50px;
+    }
+  }
+  &-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-text{
+      max-width: 350px;
+      width: 100%;
+      &__txt{
+        font-family: Open Sans, sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 25px;
+        color: #343434;
+      }
+    }
+    &-box{
+      width: 665px;
+      height: 395px;
+      border: 3px solid #005BC1;
+      position: relative;
+      img{
+        max-width: 255px;
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+      }
+      &__subtitle{
+        padding: 42px 30px 45px;
+        font-family: Oswald, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #343434;
+      }
+      .owl-carousel{
+        .owl-stage {
+          .owl-item {
+            padding: 0 50px 30px 30px;
+            position: relative;
+            &-card{
+              position: absolute;
+              top: 0;
+              width: 100%;
+              left: 50%;
+              &-name {
+                font-family: Oswald, sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+                margin-bottom: 30px;
+              }
+              &-tabs {
+                &__tab {
+                  font-family: Open Sans, sans-serif;
+                  font-style: normal;
+                  font-weight: 300;
+                  font-size: 14px;
+                  line-height: 19px;
+                  color: #343434;
+                  margin-bottom: 15px;
+                  &:last-child {
+                    margin-bottom: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .owl-nav {
+          position: absolute;
+          width: 55px;
+          height: 55px;
+          bottom: 110%;
+          right: 85px;
+          cursor: pointer;
+          .customPrev {
+            background: url("../img/prevBtn.png") center/cover no-repeat;
+            height: 100%;
+            width: 100%;
+          }
+
+          .customNext {
+            background: url("../img/nextBtn.png") center/cover no-repeat;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            right: -55px;
+          }
+        }
+      }
+    }
+  }
+}
